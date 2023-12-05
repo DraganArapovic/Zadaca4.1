@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+	<meta charset="UTF-8" />
+	<title>Varijable</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var arr = ['Ovo', 'je', 'My', 'prvi', 'komad', 'OF', 'JAVASCRIPT', 'koda', 'Koji', ', ', 'je', 'proradio'];
+
+		function funkcija(arr) {
+		    var novoPolje = arr.filter(function(element) {
+		        return (typeof element === 'string' || typeof element === 'number') && (element.toString().length >= 5 || /^[A-Z]+$/.test(element));
+		    });
+		    return novoPolje;
+		}
+		var rezultat = funkcija(arr);
+		document.write(rezultat);
+	</script>
+</body>
+</html>

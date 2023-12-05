@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+	<meta charset="UTF-8" />
+	<title>Varijable</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var funkcija = function(x) {
+		    if (typeof x === 'number') {
+		        return x * x;
+		    } else {
+		        return "Obavijest o pogrešci";
+		    }
+		};
+		document.write("Npr. ako unesemo broj 5 rezultat je: " + funkcija(5)); 
+		document.write("<br>A ako unesemo neki tekst: " + funkcija("Nije broj"));
+	</script>
+</body>
+</html>
